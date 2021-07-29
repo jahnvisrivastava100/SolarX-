@@ -167,7 +167,7 @@ Mercury is appropriately named for the swiftest of the ancient Roman gods.
           <h2 class="modal-title">Jupiter</h2>
         </div>
         <div class="modal-body">
-          <img src="assets/Jupiter.png" alt=""> <br>
+          <img src="assets/jupiter.png" alt=""> <br>
           Jupiter has a long history of surprising scientists – all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.
 
 The Latest
@@ -268,6 +268,43 @@ More than 30 times as far from the Sun as Earth, Neptune is the only planet in o
 
 
 
+  <div id="calculator" class="modal fade" role="article">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">Calculate Your Weight on different Planets</h2>
+        </div>
+        <div class="modal-body">
+         Enter your Weight on Earth<br>
+         <input id="weight_earth" type="number"><br>
+         Enter the planet on which you want to know your weight?<br>
+         <input id="weight_planet" type=”text” name=”planet” id="planet" list="planet_list">
+       <datalist id="planet_list">
+        <option>mercury</option>
+       <option>venus</option>
+       <option>earth</option>
+      <option>mars</option>
+      <option>jupiter</option>
+      <option>saturn</option>
+      <option>uranus</option>
+      <option>neptune</option>
+    
+</datalist>
+<br>
+ <button onclick="get_weight()">GO!</button>
+ <div id="answer"> </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
 
 
 <!---- end---->
@@ -303,8 +340,8 @@ More than 30 times as far from the Sun as Earth, Neptune is the only planet in o
                     <a href="#" data-toggle="modal" data-target="#neptune">Neptune</a>
                 </li>
                 <li>
-                
-                </li>
+                  <a href="#" data-toggle="modal" data-target="#calculator">Calculator</a>
+              </li>
 
             </ul>
         </div>
@@ -381,6 +418,7 @@ More than 30 times as far from the Sun as Earth, Neptune is the only planet in o
              </span></p>
         </div>
      </div>
+
 
 
 </container>
