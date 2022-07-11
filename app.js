@@ -32,7 +32,7 @@
 
 const planet_map = new Map([
   ["mercury", 1],
-  ["venus", ],
+  ["venus", 0.91],
   ["earth", 1],
   ["mars",0.38],
   ["jupiter",2.34],
