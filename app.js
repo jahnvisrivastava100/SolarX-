@@ -45,13 +45,20 @@ const planet_map = new Map([
 function get_weight(){
   const wt_planet = document.getElementById("weight_planet").value;
   const wt_earth = document.getElementById("weight_earth").value;
-
+  //new lines of code----
+  if( wt_earth < 0){ 
+  document.getElementById("answer").innerHTML="<h3>Oop something went wrong enter valid weight</h3>"
+  const speech = "Oop something went wrong enter valid weight";
+  speak2(speech);
+}
+  //--------------
+else{
   const ans = Math.round(planet_map.get(wt_planet)*wt_earth);
   
   document.getElementById("answer").innerHTML="<img  src=assets/"+wt_planet+".png width=`300px` height=`300px` ><h3>Your weight on  "+wt_planet+" will be "+ans+"kg approx.</h3>"
   const speech = "Hola your weight on"+wt_planet+"will be approximately"+ans+"kg";
   speak2(speech);
-   
+}
 }
 
 
